@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site For Dropshiping"/>
+    <meta name="keywords" content="seo, search engine optimization"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 js</title>
+    <!--  googal fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/assign.css">
+
+  </head>
+  <body>
+<div class="container mt-5">
+     <!-- Title -->
+  <header>
+    <h1 class="head-title"><span class="position-relative">Bookmarker</span></h1>
+  </header>
+
+   <!-- input -->
+    <section class="input mt-5 py-3">
+   <h2><i class="fa-solid fa-bookmark me-2"></i><span>Bookmark your favorite sites</span><i class="fa-solid fa-bookmark ms-2"></i></h2>
+   <div class="site-name px-2 mb-3">
+    <label class="fw-bold mb-2"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+    <div class="siteName  position-relative">
+      <input type="text" onkeyup="WebsiteNameValidation()"  id="siteName" placeholder="Bookmark Name" class="form-control">
+      <div class="icon top-0 p-2 position-absolute end-0 top-1">
+        <i id="checkName" class="fa-solid fa-check text-success fa-lg d-none"></i>
+        <i id="wrongName" class="fa-solid fa-circle-xmark text-danger d-none"></i>
+      </div>
+    </div>
+   </div> 
+   <div class="site-url px-2 mb-3">
+    <label class="fw-bold mb-2"><i class="fa-solid fa-link pe-2"></i>Site Url</label>
+    <div class="url position-relative">
+      <input type="url" id="siteUrl" onkeyup="WebsiteUrlValidation()" placeholder="Website Url" class="form-control ">
+      <div class="icon top-0 p-2 position-absolute end-0 top-1">
+        <i id="checkUrl" class="fa-solid fa-check text-success fa-lg d-none"></i>
+        <i id="wrongUrl" class="fa-solid fa-circle-xmark text-danger d-none"></i>
+      </div>
+    </div>
+   </div> 
+   <div class="submit text-center">
+    <button id="submit" class="btn-submit btn btn-danger px-5 mb-3">Submit</button>
+   </div>
+    </section>
+
+     <!-- output -->
+     <section class="output mt-4">
+      <table class="table  bg-white text-center">
+        <thead>
+          <th>Index</th>
+          <th class="col-6">Website Name</th>
+          <th>Vist</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="tableBody">
+       <a href=""></a>
+        </tbody>
+      </table>
+     </section>
+     <!-- Alert --> 
+     <div id="alert" class="alert d-flex justify-content-center align-items-center">
+        <div class="box position-relative">
+          <p class="circle rounded-circle ms-3 mt-3"><span class="bg-danger rounded-circle"></span><span class="bg-success rounded-circle"></span><span class="bg-warning rounded-circle"></span></p>
+           <p id="close" class="position-absolute top-0 end-0 p-3"><i class="fa-solid fa-xmark close fs-3 "></i></p>
+         <p>Site Name or Url is not valid, Please follow the rules below :</p> 
+         <p><i class="fa-regular fa-circle-right p-2 text-danger"></i>Site name must contain at least 3 characters</p> 
+         <p><i class="fa-regular fa-circle-right p-2 text-danger"></i>Site URL must be a valid one</p> 
+        </div>
+     </div>
+
+</div>
+
+    </div>
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 26a35d8a4308b535de176fed1a202cc411186432
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
