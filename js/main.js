@@ -85,6 +85,10 @@ function WebsiteUrlValidation() {
 function reset() {
     siteName.value = "" ;
     siteUrl.value = "" ;
+    siteName.setAttribute('style', 'box-shadow:none; border:1px solid #ced4da !important;');
+    siteUrl.setAttribute('style', 'box-shadow:none; border:1px solid #ced4da!important;');
+    chekUrlItem.setAttribute('style', 'display:none !important');
+    chekNameItem.setAttribute('style', 'display:none !important');
 }
 
 let temp;
