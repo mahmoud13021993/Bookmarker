@@ -25,15 +25,26 @@ closeItem.onclick = function() {
             websiteName: siteName.value,
             websiteUrl: siteUrl.value
         }
+        for(let i=0;i<urlList.length;i++) {
+            if(urlList[i].websiteName === siteName.value) {
+              return  alert("not allow Duplcate");
+            } else {
+                if(urlList[i].websiteName === siteName.value) {
+                    return  alert("not allow Duplcate");
+                  }
+            }
+        }
         urlList.push(websites);
         console.log(urlList);
-        reset();
         showData();
         localStorage.setItem("webList" , JSON.stringify(urlList));
         console.log("true done");
+        reset();
     }else {
        alertBox.setAttribute('style', 'display:flex !important');
     }
+}
+function noDublcate() {
     
 }
 function WebsiteNameValidation() {
